@@ -270,18 +270,39 @@ GET</li>
 </ul>
 </li>
 <li><p><strong>Parameters:</strong></p>
+</li>
+</ol>
+<p><br>
+   <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>req</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>
+                   object
+                </td> 
+            </tr>
+            <tr>
+                <td>Contains</td>
+                <td>Query: { limit: Number,
+&#x2003;pageNo: Number, Name: pageNo, Type: Number, Name: filter, Type: string
+}</td>
+                  </tr>
+        </tbody>
+    </table><br></p>
 <ul>
-<li>| <strong>Name</strong> | req |
-| :--- | :--- |
-| <strong>Type</strong> | Object |
-| <strong>Contains</strong> | Query: { &#x2003;limit: Number, &#x2003;pageNo: Number  &#x2003;Name: pageNo, &#x2003;Type: Number  &#x2003;Name: filter &#x2003;Type: string } |</li>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
 <p><strong>Description:</strong><br>Response object returned to the api which contains collection of trip details.</p>
 <p>Filter can take three values namely:<br><strong>All</strong><br>(default),<br><strong>Ongoing</strong><br>and<br><strong>Completed</strong><br>.</p>
 </li>
 </ul>
-</li>
+<ol>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with four properties:
@@ -310,18 +331,39 @@ GET</li>
 <code>./controllers/admin-trip.js</code></li>
 </ul>
 </li>
-<li><p><strong>Parameters:</strong></p>
+<li><strong>Parameters:</strong></li>
+</ol>
+<p><br>
+ <table class="table table-bordered">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>req</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>type</td>
+              <td>
+                 object
+              </td> 
+          </tr>
+          <tr>
+              <td>Contains</td>
+              <td>params: {
+                &#x2003;Name: tripId,
+&#x2003;                  Type: string
+                }</td>
+          </tr>
+      </tbody>
+  </table><br></p>
 <ul>
-<li>| <strong>Name</strong> | req |
-| :--- | :--- |
-| <strong>Type</strong> | Object |
-| <strong>Contains</strong> | params: { &#x2003;Name: tripId, &#x2003;Type: string } |</li>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
 <p><strong>Description:</strong><br>Response object returned to the api which contains requested trip details.</p>
 </li>
 </ul>
-</li>
+<ol>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with three properties:
@@ -346,18 +388,39 @@ GET</li>
 <li>Requires <strong>user ID </strong>as input parameter.</li>
 </ul>
 </li>
-<li><p><strong>Parameters:</strong></p>
+<li><strong>Parameters:</strong></li>
+</ol>
+<p><br>
+   <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>req</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>
+                   object
+                </td> 
+            </tr>
+            <tr>
+                <td>Contains</td>
+                <td>params: {
+                  &#x2003;Name: userId,
+&#x2003;                  Type: string
+                  }</td>
+            </tr>
+        </tbody>
+    </table><br></p>
 <ul>
-<li>| <strong>Name</strong> | req |
-| :--- | :--- |
-| <strong>Type</strong> | Object |
-| <strong>Contains</strong> | params: { &#x2003;Name: userId, &#x2003;Type: string } |</li>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
 <p><strong>Description:</strong><br>Response object returned to the api which contains data regarding trip requests and trips corresponding to a user.</p>
 </li>
 </ul>
-</li>
+<ol>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with tree properties:
@@ -391,16 +454,32 @@ GET</li>
 </ul>
 </li>
 <li><p><strong>Parameters:</strong></p>
+</li>
+</ol>
+<p><br>
+   <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>req</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>
+                   object
+                </td> 
+            </tr>
+        </tbody>
+    </table><br></p>
 <ul>
-<li>| <strong>Name</strong> | req |
-| :--- | :--- |
-| <strong>Type</strong> | Object |</li>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
 <p><strong>Description:</strong><br>Response object returned to the api which contains revenue details per month.</p>
 </li>
 </ul>
-</li>
+<ol>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with tree properties:
@@ -457,7 +536,7 @@ GET</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Trip","level":"1.4.2","depth":2,"next":{"title":"License","level":"1.5","depth":1,"path":"license.md","ref":"license.md","articles":[]},"previous":{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","ace","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard","options":[{"value":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard/","text":"latest"},{"value":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"trip.md","mtime":"2017-04-12T14:34:49.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:37:14.372Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Trip","level":"1.4.2","depth":2,"next":{"title":"License","level":"1.5","depth":1,"path":"license.md","ref":"license.md","articles":[]},"previous":{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","ace","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard","options":[{"value":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard/","text":"latest"},{"value":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"trip.md","mtime":"2017-04-12T15:03:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:50:42.735Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

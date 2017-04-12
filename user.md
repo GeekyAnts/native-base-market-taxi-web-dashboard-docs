@@ -24,10 +24,30 @@ Contains all possible route which an admin can access about an user such as regi
      `./config/para-validation.js`
 4. **Parameters:**
 
-   * | **Name** | req |
-     | :--- | :--- |
-     | **Type** | Object |
-     | **Contains** | Query: {  limit: Number,  pageNo: Number } |
+<br/>
+   <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>req</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>
+                   object
+                </td> 
+            </tr>
+            <tr>
+                <td>Contains</td>
+                <td>Query: {
+                   limit: Number,
+                   pageNo: Number
+                  }</td>
+            </tr>
+        </tbody>
+    </table><br />
    * **Name:  **res
 
      **Type:  **Object
@@ -62,11 +82,31 @@ Contains all possible route which an admin can access about an user such as regi
    * Functionality:
      `./controllers/admin-user.js`
 4. **Parameters:**
-
-   * | **Name** | req |
-     | :--- | :--- |
-     | **Type** | Object |
-     | **Contains** | params: {  Name: userId,  Type: string } |
+  
+<br/>
+   <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>req</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>
+                   object
+                </td> 
+            </tr>
+            <tr>
+                <td>Contains</td>
+                <td>params: {
+                   Name: userId,
+                   Type: string
+                  }</td>
+            </tr>
+        </tbody>
+    </table><br />
    * **Name: **res
 
      **Type: **Object

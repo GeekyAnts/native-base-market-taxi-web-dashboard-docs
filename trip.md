@@ -34,10 +34,29 @@ Contains all possible route which an admin about can access about trip such as d
 
 4. **Parameters:**
 
-   * | **Name** | req |
-     | :--- | :--- |
-     | **Type** | Object |
-     | **Contains** | Query: {  limit: Number,  pageNo: Number   Name: pageNo,  Type: Number   Name: filter  Type: string } |
+<br/>
+   <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>req</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>
+                   object
+                </td> 
+            </tr>
+            <tr>
+                <td>Contains</td>
+                <td>Query: { limit: Number,
+ pageNo: Number, Name: pageNo, Type: Number, Name: filter, Type: string
+}</td>
+                  </tr>
+        </tbody>
+    </table><br />
    * **Name: **res
 
      **Type: **Object
@@ -81,10 +100,30 @@ Contains all possible route which an admin about can access about trip such as d
      `./controllers/admin-trip.js`
 4. **Parameters:**
 
-   * | **Name** | req |
-     | :--- | :--- |
-     | **Type** | Object |
-     | **Contains** | params: {  Name: tripId,  Type: string } |
+<br/>
+ <table class="table table-bordered">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>req</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>type</td>
+              <td>
+                 object
+              </td> 
+          </tr>
+          <tr>
+              <td>Contains</td>
+              <td>params: {
+                 Name: tripId,
+                   Type: string
+                }</td>
+          </tr>
+      </tbody>
+  </table><br />
    * **Name: **res
 
      **Type: **Object
@@ -116,10 +155,30 @@ Contains all possible route which an admin about can access about trip such as d
    * Requires **user ID **as input parameter.
 4. **Parameters:**
 
-   * | **Name** | req |
-     | :--- | :--- |
-     | **Type** | Object |
-     | **Contains** | params: {  Name: userId,  Type: string } |
+<br/>
+   <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>req</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>
+                   object
+                </td> 
+            </tr>
+            <tr>
+                <td>Contains</td>
+                <td>params: {
+                   Name: userId,
+                   Type: string
+                  }</td>
+            </tr>
+        </tbody>
+    </table><br />
    * **Name: **res
 
      **Type: **Object
@@ -159,9 +218,23 @@ Contains all possible route which an admin about can access about trip such as d
 
 4. **Parameters:**
 
-   * | **Name** | req |
-     | :--- | :--- |
-     | **Type** | Object |
+<br/>
+   <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>req</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type</td>
+                <td>
+                   object
+                </td> 
+            </tr>
+        </tbody>
+    </table><br />
    * **Name: **res
 
      **Type: **Object
