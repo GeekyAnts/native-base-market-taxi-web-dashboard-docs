@@ -17,14 +17,6 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-versions/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
-                
-            
-                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -241,23 +233,19 @@
 <p><strong>File Name:</strong> admin.js<br><strong>File Path:</strong>  /server/routes/admin.js<br>Contains all possible route which an admin can access about an user such as register, update, view, delete user details etc.</p>
 <ul>
 <li><strong>Contents:</strong></li>
-<li><a href="https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/user#allUserDetails" target="_blank">All User Details</a></li>
-<li><a href="https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/user#specificUserDetails" target="_blank">Specific User Details</a></li>
-<li><a href="https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/user#userStatsDetails" target="_blank">User Stats Details</a></li>
+<li>All User Details</li>
+<li>Specific User Details</li>
+<li>User Stats Details</li>
 </ul>
 <h4 id="all-user-details">All User Details</h4>
 <ol>
-<li><strong>API Path:</strong>
-api/admin/user</li>
-<li><strong>Method:</strong>
-GET</li>
+<li><strong>API Path:</strong> api/admin/user</li>
+<li><strong>Method:</strong> GET</li>
 <li><strong>Description:</strong><ul>
 <li>This route fetch user details of both rider and driver, those which are registered with the taxi-app application.</li>
 <li>Renders paginated data.</li>
-<li>Functionality:
-<code>./controllers/admin-user.js</code></li>
-<li>Parameter validation:
-<code>./config/para-validation.js</code></li>
+<li>Functionality: <code>./controllers/admin-user.js</code></li>
+<li>Parameter validation: <code>./config/para-validation.js</code></li>
 </ul>
 </li>
 <li><strong>Parameters:</strong></li>
@@ -310,15 +298,12 @@ field is an array of user object containing all the details of the user.</li>
 </ol>
 <h4 id="specific-user-details">Specific User Details</h4>
 <ol>
-<li><strong>API Path:</strong>
-api/admin/user/:userId</li>
-<li><strong>Method:</strong>
-GET</li>
+<li><strong>API Path:</strong> api/admin/user/:userId</li>
+<li><strong>Method:</strong> GET</li>
 <li><strong>Description:</strong><ul>
 <li>This route fetch details of a specific user, either a rider or a driver.</li>
 <li>Requires <strong>user ID </strong>as input parameter.</li>
-<li>Functionality:
-<code>./controllers/admin-user.js</code></li>
+<li>Functionality: <code>./controllers/admin-user.js</code></li>
 </ul>
 </li>
 <li><strong>Parameters:</strong></li>
@@ -350,7 +335,7 @@ GET</li>
 <ul>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
-<p><strong>Description:</strong><br>Response object returned to the api which contains requested user details.</p>
+<p><strong>Description:</strong> Response object returned to the api which contains requested user details.</p>
 </li>
 </ul>
 <ol>
@@ -369,14 +354,11 @@ GET</li>
 </ol>
 <h4 id="user-stats-details">User Stats Details</h4>
 <ol>
-<li><strong>API Path:</strong>
-api/admin/user/userStatsChart</li>
-<li><strong>Method:</strong>
-GET</li>
+<li><strong>API Path:</strong> api/admin/user/userStatsChart</li>
+<li><strong>Method:</strong> GET</li>
 <li><strong>Description:</strong><ul>
 <li>This route fetch the number of user (rider and driver) registered with the Taxi App.</li>
-<li>Functionality:
-<code>./controllers/admin-user.js</code></li>
+<li>Functionality: <code>./controllers/admin-user.js</code></li>
 </ul>
 </li>
 <li><p><strong>Parameters:</strong></p>
@@ -442,7 +424,7 @@ GET</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"User","level":"1.4.1","depth":2,"next":{"title":"Trip","level":"1.4.2","depth":2,"path":"trip.md","ref":"trip.md","articles":[]},"previous":{"title":"API","level":"1.4","depth":1,"ref":"","articles":[{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},{"title":"Trip","level":"1.4.2","depth":2,"path":"trip.md","ref":"trip.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["versions","ace","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard","options":[{"value":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard/","text":"latest"},{"value":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"user.md","mtime":"2017-04-12T14:59:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:50:42.735Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"User","level":"1.4.1","depth":2,"next":{"title":"Trip","level":"1.4.2","depth":2,"path":"trip.md","ref":"trip.md","articles":[]},"previous":{"title":"API","level":"1.4","depth":1,"ref":"","articles":[{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},{"title":"Trip","level":"1.4.2","depth":2,"path":"trip.md","ref":"trip.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"user.md","mtime":"2017-04-12T18:01:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T18:02:25.748Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -452,23 +434,7 @@ GET</li>
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-versions/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
-        
-    
-        
         <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

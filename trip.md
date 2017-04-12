@@ -5,22 +5,18 @@
 Contains all possible route which an admin about can access about trip such as details of all trip, specific trip, all trips of specific user etc.
 
 * **Contents:**
-* [All Trip Details](https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/trip#allTripDetails)
-* [Specific Trip Details](https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/trip#specificTripDetails)
-* [User Trip Details](https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/trip#userTripDetails)
-* [Revenue Details](https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/trip#revenueDetails)
+* All Trip Details
+* Specific Trip Details
+* User Trip Details
+* Revenue Details
 
 #### All Trip Details
 
-1. **API Path:**
-   api/admin/trip
-2. **Method:**
-   GET
+1. **API Path:** api/admin/trip
+2. **Method:** GET
 3. **Description:**
 
-   * This route fetch data related to all the trips which a user  
-     \(both rider and driver\)  
-     has commuted.
+   * This route fetch data related to all the trips which a user \(both rider and driver\) has commuted.
 
      Also it has a filter functionality which is use to filter the data based on the tripStatus.
 
@@ -30,7 +26,6 @@ Contains all possible route which an admin about can access about trip such as d
      `./controllers/admin-trip.js`
    * Includes a filter functionality, which filters the data based on the
      **tripStatus**
-     .
 
 4. **Parameters:**
 
@@ -65,21 +60,14 @@ Contains all possible route which an admin about can access about trip such as d
      Response object returned to the api which contains collection of trip details.
 
      Filter can take three values namely:  
-     **All**  
-     \(default\),  
-     **Ongoing**  
-     and  
-     **Completed**  
-     .
+     **All** \(default\), **Ongoing** and **Completed**  
 
 5. **Response:**
 
    * Returns object with four properties:
      **success **\(bool\), **message**, **data **and **meta .**
-   * **Data**
-     field is an array of trip object containing all the details of the trip.
-   * **Meta**  
-     field contains fields related to pagination such as totalNoOfPages, currPageNo, limit etc.
+   * **Data** field is an array of trip object containing all the details of the trip.
+   * **Meta** field contains fields related to pagination such as totalNoOfPages, currPageNo, limit etc.
 
    * **Http Code**: 200
 
@@ -89,15 +77,12 @@ Contains all possible route which an admin about can access about trip such as d
 
 #### Specific Trip Details
 
-1. **API Path:**
-   api/admin/trip/:tripId
-2. **Method:**
-   GET
+1. **API Path:** api/admin/trip/:tripId
+2. **Method:** GET
 3. **Description:**
    * This route fetch details of a specific trip, including rider and driver details.
    * Requires **trip ID **as input parameter.
-   * Functionality:
-     `./controllers/admin-trip.js`
+   * Functionality: `./controllers/admin-trip.js`
 4. **Parameters:**
 
 <br/>
@@ -128,15 +113,13 @@ Contains all possible route which an admin about can access about trip such as d
 
      **Type: **Object
 
-     **Description:**  
-     Response object returned to the api which contains requested trip details.
+     **Description:** Response object returned to the api which contains requested trip details.
 
 5. **Response:**
 
    * Returns object with three properties:
      **success **\(bool\), **message **and **data**
-   * **Data**  
-     field is an object containing the details of requested trip along with rider and driver details.
+   * **Data** field is an object containing the details of requested trip along with rider and driver details.
 
    * **Http Code**: 200
 
@@ -146,10 +129,8 @@ Contains all possible route which an admin about can access about trip such as d
 
 #### User Trip Details
 
-1. **API Path:**
-   api/admin/trip/user/:userId
-2. **Method:**
-   GET
+1. **API Path:** api/admin/trip/user/:userId
+2. **Method:** GET
 3. **Description:**
    * This route fetch details of all the trips commuted by an user.
    * Requires **user ID **as input parameter.
@@ -183,8 +164,7 @@ Contains all possible route which an admin about can access about trip such as d
 
      **Type: **Object
 
-     **Description:**  
-     Response object returned to the api which contains data regarding trip requests and trips corresponding to a user.
+     **Description:** Response object returned to the api which contains data regarding trip requests and trips corresponding to a user.
 
 5. **Response:**
 
@@ -201,10 +181,8 @@ Contains all possible route which an admin about can access about trip such as d
 
 #### Revenue Details
 
-1. **API Path:**
-   api/admin/trip/charts
-2. **Method:**
-   GET
+1. **API Path:** api/admin/trip/charts
+2. **Method:** GET
 3. **Description:**
 
    * This route is use to fetch data related to the revenue earned in each month. This route fetches data from past 12 months. Its functionality is defined inside ./controllers/admin-trip.js.
@@ -239,8 +217,7 @@ Contains all possible route which an admin about can access about trip such as d
 
      **Type: **Object
 
-     **Description:**  
-     Response object returned to the api which contains revenue details per month.
+     **Description:** Response object returned to the api which contains revenue details per month.
 
 5. **Response:**
 

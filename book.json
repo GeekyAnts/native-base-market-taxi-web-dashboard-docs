@@ -1,28 +1,13 @@
 {
     "title": "TaxiApp-Backend",
     "plugins": [
-        "versions",
-        "ace",
         "edit-link"
     ],
     "pluginsConfig": {
         "edit-link": {
             "base": "https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master",
             "label": "Edit This Page"
-        },
-        "versions": {
-            "gitbookConfigURL": "https://docs.market.nativebase.io/react-native-taxi-web-dashboard",
-            "options": [
-                {
-                    "value": "https://docs.market.nativebase.io/react-native-taxi-web-dashboard/",
-                    "text": "latest"
-                },
-                {
-                    "value": "https://docs.market.nativebase.io/react-native-taxi-web-dashboard/",
-                    "text": "-- select version --",
-                    "selected": false
-                }
-            ]
         }
+        
     }
 }

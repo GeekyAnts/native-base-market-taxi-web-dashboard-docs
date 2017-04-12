@@ -17,14 +17,6 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-versions/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-ace/ace.css">
-                
-            
-                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -243,20 +235,18 @@
 <p><strong>File Name:</strong> admin.js<br><strong>File Path:</strong>  /server/routes/admin.js<br>Contains all possible route which an admin about can access about trip such as details of all trip, specific trip, all trips of specific user etc.</p>
 <ul>
 <li><strong>Contents:</strong></li>
-<li><a href="https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/trip#allTripDetails" target="_blank">All Trip Details</a></li>
-<li><a href="https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/trip#specificTripDetails" target="_blank">Specific Trip Details</a></li>
-<li><a href="https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/trip#userTripDetails" target="_blank">User Trip Details</a></li>
-<li><a href="https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/trip#revenueDetails" target="_blank">Revenue Details</a></li>
+<li>All Trip Details</li>
+<li>Specific Trip Details</li>
+<li>User Trip Details</li>
+<li>Revenue Details</li>
 </ul>
 <h4 id="all-trip-details">All Trip Details</h4>
 <ol>
-<li><strong>API Path:</strong>
-api/admin/trip</li>
-<li><strong>Method:</strong>
-GET</li>
+<li><strong>API Path:</strong> api/admin/trip</li>
+<li><strong>Method:</strong> GET</li>
 <li><p><strong>Description:</strong></p>
 <ul>
-<li><p>This route fetch data related to all the trips which a user<br>(both rider and driver)<br>has commuted.</p>
+<li><p>This route fetch data related to all the trips which a user (both rider and driver) has commuted.</p>
 <p>Also it has a filter functionality which is use to filter the data based on the tripStatus.</p>
 </li>
 <li><p>Renders paginated data.</p>
@@ -265,8 +255,7 @@ GET</li>
 <code>./controllers/admin-trip.js</code></p>
 </li>
 <li>Includes a filter functionality, which filters the data based on the
-<strong>tripStatus</strong>
-.</li>
+<strong>tripStatus</strong></li>
 </ul>
 </li>
 <li><p><strong>Parameters:</strong></p>
@@ -299,7 +288,7 @@ GET</li>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
 <p><strong>Description:</strong><br>Response object returned to the api which contains collection of trip details.</p>
-<p>Filter can take three values namely:<br><strong>All</strong><br>(default),<br><strong>Ongoing</strong><br>and<br><strong>Completed</strong><br>.</p>
+<p>Filter can take three values namely:<br><strong>All</strong> (default), <strong>Ongoing</strong> and <strong>Completed</strong>  </p>
 </li>
 </ul>
 <ol>
@@ -307,9 +296,8 @@ GET</li>
 <ul>
 <li>Returns object with four properties:
 <strong>success </strong>(bool), <strong>message</strong>, <strong>data </strong>and <strong>meta .</strong></li>
-<li><strong>Data</strong>
-field is an array of trip object containing all the details of the trip.</li>
-<li><p><strong>Meta</strong><br>field contains fields related to pagination such as totalNoOfPages, currPageNo, limit etc.</p>
+<li><strong>Data</strong> field is an array of trip object containing all the details of the trip.</li>
+<li><p><strong>Meta</strong> field contains fields related to pagination such as totalNoOfPages, currPageNo, limit etc.</p>
 </li>
 <li><p><strong>Http Code</strong>: 200</p>
 <p><strong>Name</strong>: returnObj</p>
@@ -320,15 +308,12 @@ field is an array of trip object containing all the details of the trip.</li>
 </ol>
 <h4 id="specific-trip-details">Specific Trip Details</h4>
 <ol>
-<li><strong>API Path:</strong>
-api/admin/trip/:tripId</li>
-<li><strong>Method:</strong>
-GET</li>
+<li><strong>API Path:</strong> api/admin/trip/:tripId</li>
+<li><strong>Method:</strong> GET</li>
 <li><strong>Description:</strong><ul>
 <li>This route fetch details of a specific trip, including rider and driver details.</li>
 <li>Requires <strong>trip ID </strong>as input parameter.</li>
-<li>Functionality:
-<code>./controllers/admin-trip.js</code></li>
+<li>Functionality: <code>./controllers/admin-trip.js</code></li>
 </ul>
 </li>
 <li><strong>Parameters:</strong></li>
@@ -360,7 +345,7 @@ GET</li>
 <ul>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
-<p><strong>Description:</strong><br>Response object returned to the api which contains requested trip details.</p>
+<p><strong>Description:</strong> Response object returned to the api which contains requested trip details.</p>
 </li>
 </ul>
 <ol>
@@ -368,7 +353,7 @@ GET</li>
 <ul>
 <li>Returns object with three properties:
 <strong>success </strong>(bool), <strong>message </strong>and <strong>data</strong></li>
-<li><p><strong>Data</strong><br>field is an object containing the details of requested trip along with rider and driver details.</p>
+<li><p><strong>Data</strong> field is an object containing the details of requested trip along with rider and driver details.</p>
 </li>
 <li><p><strong>Http Code</strong>: 200</p>
 <p><strong>Name</strong>: returnObj</p>
@@ -379,10 +364,8 @@ GET</li>
 </ol>
 <h4 id="user-trip-details">User Trip Details</h4>
 <ol>
-<li><strong>API Path:</strong>
-api/admin/trip/user/:userId</li>
-<li><strong>Method:</strong>
-GET</li>
+<li><strong>API Path:</strong> api/admin/trip/user/:userId</li>
+<li><strong>Method:</strong> GET</li>
 <li><strong>Description:</strong><ul>
 <li>This route fetch details of all the trips commuted by an user.</li>
 <li>Requires <strong>user ID </strong>as input parameter.</li>
@@ -417,7 +400,7 @@ GET</li>
 <ul>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
-<p><strong>Description:</strong><br>Response object returned to the api which contains data regarding trip requests and trips corresponding to a user.</p>
+<p><strong>Description:</strong> Response object returned to the api which contains data regarding trip requests and trips corresponding to a user.</p>
 </li>
 </ul>
 <ol>
@@ -436,10 +419,8 @@ GET</li>
 </ol>
 <h4 id="revenue-details">Revenue Details</h4>
 <ol>
-<li><strong>API Path:</strong>
-api/admin/trip/charts</li>
-<li><strong>Method:</strong>
-GET</li>
+<li><strong>API Path:</strong> api/admin/trip/charts</li>
+<li><strong>Method:</strong> GET</li>
 <li><p><strong>Description:</strong></p>
 <ul>
 <li><p>This route is use to fetch data related to the revenue earned in each month. This route fetches data from past 12 months. Its functionality is defined inside ./controllers/admin-trip.js.</p>
@@ -476,7 +457,7 @@ GET</li>
 <ul>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
-<p><strong>Description:</strong><br>Response object returned to the api which contains revenue details per month.</p>
+<p><strong>Description:</strong> Response object returned to the api which contains revenue details per month.</p>
 </li>
 </ul>
 <ol>
@@ -536,7 +517,7 @@ GET</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Trip","level":"1.4.2","depth":2,"next":{"title":"License","level":"1.5","depth":1,"path":"license.md","ref":"license.md","articles":[]},"previous":{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},"dir":"ltr"},"config":{"plugins":["versions","ace","edit-link","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"ace":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"versions":{"type":"branches","gitbookConfigURL":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard","options":[{"value":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard/","text":"latest"},{"value":"https://docs.market.nativebase.io/react-native-taxi-web-dashboard/","text":"-- select version --","selected":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"trip.md","mtime":"2017-04-12T15:03:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T14:50:42.735Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Trip","level":"1.4.2","depth":2,"next":{"title":"License","level":"1.5","depth":1,"path":"license.md","ref":"license.md","articles":[]},"previous":{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"trip.md","mtime":"2017-04-12T17:58:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T18:02:25.748Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -546,23 +527,7 @@ GET</li>
     <script src="gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-versions/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-ace/ace/ace.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-ace/ace.js"></script>
-        
-    
-        
         <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

@@ -5,23 +5,19 @@
 Contains all possible route which an admin can access about an user such as register, update, view, delete user details etc.
 
 * **Contents:**
-* [All User Details](https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/user#allUserDetails)
-* [Specific User Details](https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/user#specificUserDetails)
-* [User Stats Details](https://strapmobile.com/docs/react-native-taxi-app-web-dashboard/v4.0.0/api/user#userStatsDetails)
+* All User Details
+* Specific User Details
+* User Stats Details
 
 #### All User Details
 
-1. **API Path:**
-   api/admin/user
-2. **Method:**
-   GET
+1. **API Path:** api/admin/user
+2. **Method:** GET
 3. **Description:**
    * This route fetch user details of both rider and driver, those which are registered with the taxi-app application.
    * Renders paginated data.
-   * Functionality:
-     `./controllers/admin-user.js`
-   * Parameter validation:
-     `./config/para-validation.js`
+   * Functionality: `./controllers/admin-user.js`
+   * Parameter validation: `./config/para-validation.js`
 4. **Parameters:**
 
 <br/>
@@ -72,15 +68,12 @@ Contains all possible route which an admin can access about an user such as regi
 
 #### Specific User Details
 
-1. **API Path:**
-   api/admin/user/:userId
-2. **Method:**
-   GET
+1. **API Path:** api/admin/user/:userId
+2. **Method:** GET
 3. **Description:**
    * This route fetch details of a specific user, either a rider or a driver.
    * Requires **user ID **as input parameter.
-   * Functionality:
-     `./controllers/admin-user.js`
+   * Functionality: `./controllers/admin-user.js`
 4. **Parameters:**
   
 <br/>
@@ -111,8 +104,8 @@ Contains all possible route which an admin can access about an user such as regi
 
      **Type: **Object
 
-     **Description:**  
-     Response object returned to the api which contains requested user details.
+     **Description:** Response object returned to the api which contains requested user details.
+
 
 5. **Response:**
 
@@ -128,14 +121,11 @@ Contains all possible route which an admin can access about an user such as regi
 
 #### User Stats Details
 
-1. **API Path:**
-   api/admin/user/userStatsChart
-2. **Method:**
-   GET
+1. **API Path:** api/admin/user/userStatsChart
+2. **Method:** GET
 3. **Description:**
    * This route fetch the number of user \(rider and driver\) registered with the Taxi App.
-   * Functionality:
-     `./controllers/admin-user.js`
+   * Functionality: `./controllers/admin-user.js`
 4. **Parameters:**
 
    * **Name: **req
