@@ -259,39 +259,37 @@
 </ul>
 </li>
 <li><p><strong>Parameters:</strong></p>
-</li>
-</ol>
-<p><br>
-   <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>req</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>type</td>
-                <td>
-                   object
-                </td> 
-            </tr>
-            <tr>
-                <td>Contains</td>
-                <td>Query: { limit: Number,
+<table class="table table-bordered">
+     <thead>
+         <tr>
+             <th>Name</th>
+             <th>req</th>
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td>type</td>
+             <td>
+                object
+             </td> 
+         </tr>
+         <tr>
+             <td>Contains</td>
+             <td>Query: { limit: Number,
 &#x2003;pageNo: Number, Name: pageNo, Type: Number, Name: filter, Type: string
 }</td>
-                  </tr>
-        </tbody>
-    </table><br></p>
+               </tr>
+     </tbody>
+ </table>
+
 <ul>
-<li><p><strong>Name: </strong>res</p>
-<p><strong>Type: </strong>Object</p>
-<p><strong>Description:</strong><br>Response object returned to the api which contains collection of trip details.</p>
-<p>Filter can take three values namely:<br><strong>All</strong> (default), <strong>Ongoing</strong> and <strong>Completed</strong>  </p>
+<li><p>Name: res</p>
+<p>Type: Object</p>
+<p><strong>Description:</strong> Response object returned to the api which contains collection of trip details.</p>
+<p>Filter can take three values namely: <strong>All</strong> (default), <strong>Ongoing</strong> and <strong>Completed</strong>  </p>
 </li>
 </ul>
-<ol>
+</li>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with four properties:
@@ -312,47 +310,46 @@
 <li><strong>Method:</strong> GET</li>
 <li><strong>Description:</strong><ul>
 <li>This route fetch details of a specific trip, including rider and driver details.</li>
-<li>Requires <strong>trip ID </strong>as input parameter.</li>
+<li>Requires <strong>trip ID</strong>  as input parameter.</li>
 <li>Functionality: <code>./controllers/admin-trip.js</code></li>
 </ul>
 </li>
-<li><strong>Parameters:</strong></li>
-</ol>
-<p><br>
- <table class="table table-bordered">
-      <thead>
-          <tr>
-              <th>Name</th>
-              <th>req</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>type</td>
-              <td>
-                 object
-              </td> 
-          </tr>
-          <tr>
-              <td>Contains</td>
-              <td>params: {
-                &#x2003;Name: tripId,
+<li><p><strong>Parameters:</strong></p>
+<table class="table table-bordered">
+   <thead>
+       <tr>
+           <th>Name</th>
+           <th>req</th>
+       </tr>
+   </thead>
+   <tbody>
+       <tr>
+           <td>type</td>
+           <td>
+              object
+           </td> 
+       </tr>
+       <tr>
+           <td>Contains</td>
+           <td>params: {
+             &#x2003;Name: tripId,
 &#x2003;                  Type: string
-                }</td>
-          </tr>
-      </tbody>
-  </table><br></p>
+             }</td>
+       </tr>
+   </tbody>
+</table>
+
 <ul>
-<li><p><strong>Name: </strong>res</p>
-<p><strong>Type: </strong>Object</p>
+<li><p>Name: res</p>
+<p>Type: Object</p>
 <p><strong>Description:</strong> Response object returned to the api which contains requested trip details.</p>
 </li>
 </ul>
-<ol>
+</li>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with three properties:
-<strong>success </strong>(bool), <strong>message </strong>and <strong>data</strong></li>
+<strong>success</strong>(bool), <strong>message</strong> and <strong>data</strong></li>
 <li><p><strong>Data</strong> field is an object containing the details of requested trip along with rider and driver details.</p>
 </li>
 <li><p><strong>Http Code</strong>: 200</p>
@@ -371,44 +368,43 @@
 <li>Requires <strong>user ID </strong>as input parameter.</li>
 </ul>
 </li>
-<li><strong>Parameters:</strong></li>
-</ol>
-<p><br>
-   <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>req</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>type</td>
-                <td>
-                   object
-                </td> 
-            </tr>
-            <tr>
-                <td>Contains</td>
-                <td>params: {
-                  &#x2003;Name: userId,
+<li><p><strong>Parameters:</strong></p>
+<table class="table table-bordered">
+     <thead>
+         <tr>
+             <th>Name</th>
+             <th>req</th>
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td>type</td>
+             <td>
+                object
+             </td> 
+         </tr>
+         <tr>
+             <td>Contains</td>
+             <td>params: {
+               &#x2003;Name: userId,
 &#x2003;                  Type: string
-                  }</td>
-            </tr>
-        </tbody>
-    </table><br></p>
+               }</td>
+         </tr>
+     </tbody>
+ </table>
+
 <ul>
-<li><p><strong>Name: </strong>res</p>
-<p><strong>Type: </strong>Object</p>
+<li><p>Name: res</p>
+<p>Type: Object</p>
 <p><strong>Description:</strong> Response object returned to the api which contains data regarding trip requests and trips corresponding to a user.</p>
 </li>
 </ul>
-<ol>
+</li>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with tree properties:
-<strong>success</strong>(bool), <strong>message </strong>and <strong>data .</strong></li>
-<li><p><strong>Data</strong><br>field is an object containing the details of trip request along with rider and driver details.</p>
+<strong>success</strong>(bool), message and <strong>data .</strong></li>
+<li><p><strong>Data</strong> field is an object containing the details of trip request along with rider and driver details.</p>
 </li>
 <li><p><strong>Http Code</strong>: 200</p>
 <p><strong>Name</strong>: returnObj</p>
@@ -435,37 +431,35 @@
 </ul>
 </li>
 <li><p><strong>Parameters:</strong></p>
-</li>
-</ol>
-<p><br>
-   <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>req</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>type</td>
-                <td>
-                   object
-                </td> 
-            </tr>
-        </tbody>
-    </table><br></p>
+<table class="table table-bordered">
+     <thead>
+         <tr>
+             <th>Name</th>
+             <th>req</th>
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td>type</td>
+             <td>
+                object
+             </td> 
+         </tr>
+     </tbody>
+ </table>
+
 <ul>
-<li><p><strong>Name: </strong>res</p>
-<p><strong>Type: </strong>Object</p>
+<li><p>Name: res</p>
+<p>Type: Object</p>
 <p><strong>Description:</strong> Response object returned to the api which contains revenue details per month.</p>
 </li>
 </ul>
-<ol>
+</li>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with tree properties:
 <strong>success</strong>(bool), <strong>message </strong>and <strong>data</strong></li>
-<li><p><strong>Data</strong><br>field is an object containing revenue details per month.</p>
+<li><p><strong>Data</strong>  field is an object containing revenue details per month.</p>
 </li>
 <li><p><strong>Http Code</strong>: 200</p>
 <p><strong>Name</strong>: returnObj</p>
@@ -517,7 +511,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Trip","level":"1.4.2","depth":2,"next":{"title":"License","level":"1.5","depth":1,"path":"license.md","ref":"license.md","articles":[]},"previous":{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"trip.md","mtime":"2017-04-12T17:58:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T18:02:25.748Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Trip","level":"1.4.2","depth":2,"next":{"title":"License","level":"1.5","depth":1,"path":"license.md","ref":"license.md","articles":[]},"previous":{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"trip.md","mtime":"2017-04-13T07:27:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-13T07:28:05.580Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

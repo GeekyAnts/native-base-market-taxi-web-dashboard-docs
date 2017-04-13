@@ -29,7 +29,6 @@ Contains all possible route which an admin about can access about trip such as d
 
 4. **Parameters:**
 
-<br/>
    <table class="table table-bordered">
         <thead>
             <tr>
@@ -51,16 +50,15 @@ Contains all possible route which an admin about can access about trip such as d
 }</td>
                   </tr>
         </tbody>
-    </table><br />
-   * **Name: **res
+    </table>
 
-     **Type: **Object
+   * Name: res
 
-     **Description:**  
-     Response object returned to the api which contains collection of trip details.
+     Type: Object
 
-     Filter can take three values namely:  
-     **All** \(default\), **Ongoing** and **Completed**  
+     **Description:** Response object returned to the api which contains collection of trip details.
+
+     Filter can take three values namely: **All** \(default\), **Ongoing** and **Completed**  
 
 5. **Response:**
 
@@ -81,11 +79,10 @@ Contains all possible route which an admin about can access about trip such as d
 2. **Method:** GET
 3. **Description:**
    * This route fetch details of a specific trip, including rider and driver details.
-   * Requires **trip ID **as input parameter.
+   * Requires **trip ID**  as input parameter.
    * Functionality: `./controllers/admin-trip.js`
 4. **Parameters:**
 
-<br/>
  <table class="table table-bordered">
       <thead>
           <tr>
@@ -108,17 +105,18 @@ Contains all possible route which an admin about can access about trip such as d
                 }</td>
           </tr>
       </tbody>
-  </table><br />
-   * **Name: **res
+  </table>
 
-     **Type: **Object
+   * Name: res
+
+     Type: Object
 
      **Description:** Response object returned to the api which contains requested trip details.
 
 5. **Response:**
 
    * Returns object with three properties:
-     **success **\(bool\), **message **and **data**
+     **success**\(bool\), **message** and **data**
    * **Data** field is an object containing the details of requested trip along with rider and driver details.
 
    * **Http Code**: 200
@@ -136,7 +134,6 @@ Contains all possible route which an admin about can access about trip such as d
    * Requires **user ID **as input parameter.
 4. **Parameters:**
 
-<br/>
    <table class="table table-bordered">
         <thead>
             <tr>
@@ -159,19 +156,19 @@ Contains all possible route which an admin about can access about trip such as d
                   }</td>
             </tr>
         </tbody>
-    </table><br />
-   * **Name: **res
+    </table>
 
-     **Type: **Object
+   * Name: res
+
+     Type: Object
 
      **Description:** Response object returned to the api which contains data regarding trip requests and trips corresponding to a user.
 
 5. **Response:**
 
    * Returns object with tree properties:
-     **success**\(bool\), **message **and **data .**
-   * **Data**  
-     field is an object containing the details of trip request along with rider and driver details.
+     **success**\(bool\), message and **data .**
+   * **Data** field is an object containing the details of trip request along with rider and driver details.
 
    * **Http Code**: 200
 
@@ -196,7 +193,6 @@ Contains all possible route which an admin about can access about trip such as d
 
 4. **Parameters:**
 
-<br/>
    <table class="table table-bordered">
         <thead>
             <tr>
@@ -212,10 +208,11 @@ Contains all possible route which an admin about can access about trip such as d
                 </td> 
             </tr>
         </tbody>
-    </table><br />
-   * **Name: **res
+    </table>
 
-     **Type: **Object
+   * Name: res
+
+     Type: Object
 
      **Description:** Response object returned to the api which contains revenue details per month.
 
@@ -223,8 +220,7 @@ Contains all possible route which an admin about can access about trip such as d
 
    * Returns object with tree properties:
      **success**\(bool\), **message **and **data**
-   * **Data**  
-     field is an object containing revenue details per month.
+   * **Data**  field is an object containing revenue details per month.
 
    * **Http Code**: 200
 

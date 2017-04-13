@@ -248,39 +248,38 @@
 <li>Parameter validation: <code>./config/para-validation.js</code></li>
 </ul>
 </li>
-<li><strong>Parameters:</strong></li>
-</ol>
-<p><br>
-   <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>req</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>type</td>
-                <td>
-                   object
-                </td> 
-            </tr>
-            <tr>
-                <td>Contains</td>
-                <td>Query: {
-                  &#x2003;limit: Number,
-                  &#x2003;pageNo: Number
-                  }</td>
-            </tr>
-        </tbody>
-    </table><br></p>
+<li><p><strong>Parameters:</strong></p>
+<table class="table table-bordered">
+     <thead>
+         <tr>
+             <th>Name</th>
+             <th>req</th>
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td>type</td>
+             <td>
+                object
+             </td> 
+         </tr>
+         <tr>
+             <td>Contains</td>
+             <td>Query: {
+               &#x2003;limit: Number,
+               &#x2003;pageNo: Number
+               }</td>
+         </tr>
+     </tbody>
+ </table>
+
 <ul>
 <li><p><strong>Name:  </strong>res</p>
 <p><strong>Type:  </strong>Object</p>
-<p><strong>Description:</strong><br>Response object returned to the api which contains collection of user details.</p>
+<p><strong>Description:</strong> Response object returned to the api which contains collection of user details.</p>
 </li>
 </ul>
-<ol>
+</li>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with four properties:
@@ -306,39 +305,38 @@ field is an array of user object containing all the details of the user.</li>
 <li>Functionality: <code>./controllers/admin-user.js</code></li>
 </ul>
 </li>
-<li><strong>Parameters:</strong></li>
-</ol>
-<p><br>
-   <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>req</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>type</td>
-                <td>
-                   object
-                </td> 
-            </tr>
-            <tr>
-                <td>Contains</td>
-                <td>params: {
-                  &#x2003;Name: userId,
+<li><p><strong>Parameters:</strong></p>
+<table class="table table-bordered">
+     <thead>
+         <tr>
+             <th>Name</th>
+             <th>req</th>
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td>type</td>
+             <td>
+                object
+             </td> 
+         </tr>
+         <tr>
+             <td>Contains</td>
+             <td>params: {
+               &#x2003;Name: userId,
 &#x2003;                  Type: string
-                  }</td>
-            </tr>
-        </tbody>
-    </table><br></p>
+               }</td>
+         </tr>
+     </tbody>
+ </table>
+
 <ul>
 <li><p><strong>Name: </strong>res</p>
 <p><strong>Type: </strong>Object</p>
 <p><strong>Description:</strong> Response object returned to the api which contains requested user details.</p>
 </li>
 </ul>
-<ol>
+</li>
 <li><p><strong>Response:</strong></p>
 <ul>
 <li>Returns object with three properties:
@@ -376,7 +374,7 @@ field is an array of user object containing all the details of the user.</li>
 <ul>
 <li>Returns object with three properties:
 <strong>success </strong>(bool), <strong>message </strong>and <strong>data</strong></li>
-<li><p><strong>Data</strong><br>field is an object which contains the computed no of rider and driver data.</p>
+<li><p><strong>Data</strong> field is an object which contains the computed no of rider and driver data.</p>
 </li>
 <li><p><strong>Http Code</strong>: 200</p>
 <p><strong>Name </strong>: returnObj</p>
@@ -424,7 +422,7 @@ field is an array of user object containing all the details of the user.</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"User","level":"1.4.1","depth":2,"next":{"title":"Trip","level":"1.4.2","depth":2,"path":"trip.md","ref":"trip.md","articles":[]},"previous":{"title":"API","level":"1.4","depth":1,"ref":"","articles":[{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},{"title":"Trip","level":"1.4.2","depth":2,"path":"trip.md","ref":"trip.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"user.md","mtime":"2017-04-12T18:01:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-12T18:02:25.748Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"User","level":"1.4.1","depth":2,"next":{"title":"Trip","level":"1.4.2","depth":2,"path":"trip.md","ref":"trip.md","articles":[]},"previous":{"title":"API","level":"1.4","depth":1,"ref":"","articles":[{"title":"User","level":"1.4.1","depth":2,"path":"user.md","ref":"user.md","articles":[]},{"title":"Trip","level":"1.4.2","depth":2,"path":"trip.md","ref":"trip.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["edit-link"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/GeekyAnts/native-base-market-taxi-web-dashboard-docs/tree/master"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TaxiApp-Backend","gitbook":"*"},"file":{"path":"user.md","mtime":"2017-04-13T07:25:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-13T07:28:05.580Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

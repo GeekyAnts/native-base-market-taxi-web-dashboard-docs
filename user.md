@@ -20,7 +20,6 @@ Contains all possible route which an admin can access about an user such as regi
    * Parameter validation: `./config/para-validation.js`
 4. **Parameters:**
 
-<br/>
    <table class="table table-bordered">
         <thead>
             <tr>
@@ -43,13 +42,13 @@ Contains all possible route which an admin can access about an user such as regi
                   }</td>
             </tr>
         </tbody>
-    </table><br />
+    </table>
+
    * **Name:  **res
 
      **Type:  **Object
 
-     **Description:**  
-     Response object returned to the api which contains collection of user details.
+     **Description:** Response object returned to the api which contains collection of user details.
 
 5. **Response:**
 
@@ -76,7 +75,6 @@ Contains all possible route which an admin can access about an user such as regi
    * Functionality: `./controllers/admin-user.js`
 4. **Parameters:**
   
-<br/>
    <table class="table table-bordered">
         <thead>
             <tr>
@@ -99,13 +97,13 @@ Contains all possible route which an admin can access about an user such as regi
                   }</td>
             </tr>
         </tbody>
-    </table><br />
+    </table>
+
    * **Name: **res
 
      **Type: **Object
 
      **Description:** Response object returned to the api which contains requested user details.
-
 
 5. **Response:**
 
@@ -142,8 +140,7 @@ Contains all possible route which an admin can access about an user such as regi
 
    * Returns object with three properties:
      **success **\(bool\), **message **and **data**
-   * **Data**  
-     field is an object which contains the computed no of rider and driver data.
+   * **Data** field is an object which contains the computed no of rider and driver data.
 
    * **Http Code**: 200
 

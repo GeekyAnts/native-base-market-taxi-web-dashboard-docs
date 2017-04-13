@@ -10,9 +10,9 @@ System Requirements:
 
 #### Installation:
 
-* **Opt \#1. Download ZIP**: Not familiar with Git? Click Here to download the Full Version of TaxiApp Backend . Extract the contents of ZIP file after downloading. Downloading ZIP file does not help you to sync with further updates of TaxiApp Backend.
+* **Opt \#1. Download ZIP**: Not familiar with Git? Click Here to download the Full Version of Taxiapp web Dashboard. Extract the contents of ZIP file after downloading. Downloading ZIP file does not help you to sync with further updates of Taxiapp web Dashboard.
 
-* **Opt \#2. Clone using Git Web Client**: To setup the Full Version for TaxiApp Backend on your system, with git tools to sync your app with constant updates, clone the repo. Click Here to clone TaxiApp Backend using Git.
+* **Opt \#2. Clone using Git Web Client**: To setup the Full Version for Taxiapp backend web dashboard on your system, with git tools to sync your app with constant updates, clone the repo. Click Here to clone Taxiapp backend web dashboard using Git.
 
   * #### Run these commands on your terminal:
 
@@ -24,7 +24,7 @@ System Requirements:
 
 * * #### On the other window of terminal:
 
-                   `[user@localhost] $ cd TaxiApp-backend `
+                   `[user@localhost] $ cd Taxi-app-backend-web-dashboard `
 
                    `[user@localhost] $ npm install`
 
